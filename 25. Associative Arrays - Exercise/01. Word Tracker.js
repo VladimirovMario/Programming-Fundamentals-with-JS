@@ -8,8 +8,7 @@ function wordTracker(array) {
 
   for (const currWord of array) {
     if (tracker.hasOwnProperty(currWord)) {
-      tracker[currWord]++; // по този начин може да увеличим
-      // стойността на пропъртито с едно всеки път вместо да правим 'counter'
+      tracker[currWord]++;
     }
   }
   Object.entries(tracker)
