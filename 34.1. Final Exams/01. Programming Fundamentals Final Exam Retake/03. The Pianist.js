@@ -53,7 +53,8 @@ function thePianist(array) {
   }
 }
 /*
-Решението е без сортирането накрая.
+The solution is without sorting in the end.
+
 Upon receiving the "Stop" command, you need to print all pieces in your collection, 
 sorted by their name and by the name of their composer in alphabetical order,
  in the following format:
