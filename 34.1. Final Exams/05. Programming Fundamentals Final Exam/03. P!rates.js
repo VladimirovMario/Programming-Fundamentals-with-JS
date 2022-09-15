@@ -3,8 +3,8 @@ function pirates(array) {
   let cities = {};
   while (command !== "Sail") {
     let [town, people, gold] = command.split("||");
-    people = +people;
-    gold = +gold;
+    people = Number(people);
+    gold = Number(gold);
     if (cities.hasOwnProperty(town) == false) {
       cities[town] = { people: 0, gold: 0 };
     }
@@ -19,8 +19,8 @@ function pirates(array) {
     let town = tokens[1];
 
     if (currCommand == `Plunder`) {
-      let people = +tokens[2];
-      let gold = +tokens[3];
+      let people = Number(tokens[2]);
+      let gold = Number(tokens[3]);
       cities[town].people -= people;
       cities[town].gold -= gold;
       console.log(
@@ -31,7 +31,7 @@ function pirates(array) {
         delete cities[town];
       }
     } else if (currCommand == `Prosper`) {
-      let addedGold = +tokens[2];
+      let addedGold = Number(tokens[2]);
       if (addedGold < 0) {
         console.log("Gold added cannot be a negative number!");
       } else {
