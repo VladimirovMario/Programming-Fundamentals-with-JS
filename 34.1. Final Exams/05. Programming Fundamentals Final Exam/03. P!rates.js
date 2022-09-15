@@ -46,6 +46,7 @@ function pirates(array) {
   for (let key in cities) {
     count++;
   }
+
   if (count > 0) {
     console.log(
       `Ahoy, Captain! There are ${count} wealthy settlements to go to:`
