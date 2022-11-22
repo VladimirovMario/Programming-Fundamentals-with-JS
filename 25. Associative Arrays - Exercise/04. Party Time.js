@@ -8,7 +8,7 @@ function partyTime(array) {
     let invited = array.shift();
     let isVip = invited[0];
 
-    if (isNaN(isVip) === false) {
+    if (!isNaN(isVip)) {
       guestList.vip.push(invited); 
     } else {
       guestList.regular.push(invited);
@@ -47,6 +47,11 @@ partyTime([
   "Ce8vwPmE",
   "SVQXQCbc",
 ]);
+/*
+ 2
+7IK9Yo0h
+tSzE5t0p
+ */
 console.log(`---`);
 partyTime([
   "m8rfQBvl",
@@ -79,6 +84,12 @@ partyTime([
   "7ugX7bm0",
   "9CQBGUeJ",
 ]);
+/*
+2
+
+xys2FYzn
+MDzcM9ZK
+*/
 console.log(`---`);
 partyTime([
   "IK9Yo0h",
@@ -96,3 +107,11 @@ partyTime([
   "5SVQXQCbc",
   "6tSzE5t0p",
 ]);
+/*
+5
+7IK9Yo0h
+4Ce8vwPmE
+5SVQXQCbc
+IK9Yo0h
+NoBUajQ
+*/
